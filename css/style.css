@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Electrolize&display=swap");
+
+@font-face {
+  font-family: "SkyGraze";
+  src: url("/font/skygraze.otf");
+  src: url("/font/skygraze.otf") format("embedded-opentype"),
+    url("/font/skygraze.otf") format("woff"),
+    url("FileName.ttf") format("truetype"),
+    url("/font/skygraze.otf") format("svg");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Tango Sans";
+  src: url("../font/tango__sans.ttf");
+  src: url("../font/tango__sans.ttf") format("embedded-opentype"),
+    url("../font/tango__sans.ttf") format("woff"),
+    url("../font/tango__sans.ttf") format("truetype"),
+    url("../font/tango__sans.ttf") format("svg");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Tango Sans Bold";
+  src: url("../font/tango__sans__bold.ttf");
+  src: url("../font/tango__sans__bold.ttf") format("embedded-opentype"),
+    url("../font/tango__sans__bold.ttf") format("woff"),
+    url("../font/tango__sans__bold.ttf") format("truetype"),
+    url("../font/tango__sans__bold.ttf") format("svg");
+  font-style: normal;
+  font-weight: normal;
+}
+
+:root {
+  --font_skygrace: "SkyGraze", monospace;
+  --font__tango__sans: "Tango Sans Bold", monospace;
+  --font__tango__sans__bold: "Tango Sans Bold";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/*styling card*/
+.card-box {
+  color: black;
+  padding: 2em;
+  border-radius: 30px;
+  width: 600px;
+  margin: 1em;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.search_icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input {
+  background: transparent;
+  border: 1px double grey;
+}
+
+.cstm__con {
+  position: relative;
+  max-width: 100px;
+}
+
+.button_icon {
+  margin: 0.5em;
+  border-radius: 10px;
+  height: 44px;
+  width: 52px;
+  font-size: 20px;
+  outline: none;
+  color: black;
+  background-blend-mode: normal, color-burn;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+input.search-bar {
+  outline: none;
+  padding: 0.4em 1em;
+  border-radius: 10px;
+  color: black;
+  font-family: inherit;
+  font-size: 22px;
+  width: 520px;
+  height: 43px;
+}
+
+/*Styling placeholder*/
+input.search-bar::placeholder {
+  color: gray;
+}
+
+button:hover {
+  background: black;
+  color: white;
+}
+
+.city {
+  font-size: 40px;
+  letter-spacing: 2px;
+  text-align: center;
+  font-family: var(--font_skygrace);
+}
+
+.wheather img {
+  height: 140px;
+  width: 170px;
+}
+
+.description {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.day {
+  display: flex;
+  font-size: 20px;
+}
+
+.cstm__font {
+  font-family: monospace;
+}
+
+.footer {
+  font-size: 20px;
+  font-family: monospace;
+}
